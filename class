@@ -1,0 +1,16 @@
+public String userAutentication(String id, String pwd) {
+		try {
+			System.out.println("id: "+id+" pwd: "+pwd);
+			if(id.equals("nombre") && pwd.equals("123")){
+				System.out.println("Autenticación correcta");
+				return "Success";
+			}
+			else {
+				return "Error credentials";
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "Failed";
+	}
